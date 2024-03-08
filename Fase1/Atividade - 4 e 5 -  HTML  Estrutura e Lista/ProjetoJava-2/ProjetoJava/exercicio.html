@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DESTRAjaVA</title>
+    <link rel="icon" href="logo/LOGOJAVA.ico" type="image/ico" />
+    <!-- Vincule o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Destravando o Java na sua Mente...</h1>
+      <nav>
+        <ul>
+      
+      
+          <li>
+            <a href="inicio.html" class="btn">Início</a>
+            <div class="submenu">
+              <a href="#historia">Nossa História</a>
+              <a href="#missao">Nossa Missão</a>
+              <a href="#contato">Contato</a>
+            </div>
+          </li>
+          <li>
+            <a href="videos.html" class="btn">Vídeos</a>
+            <div class="submenu">
+              <a href="#logica-programacao">Lógica de Programação</a>
+              <a href="#algoritmos">Algoritmos</a>
+              <a href="#java-basico">Java Básico</a>
+              <a href="#vscode">IDE VSCode</a>
+            </div>
+          </li>
+          <li>
+            <a href="Artigos.html" class="btn">Material Acadêmico</a>
+            <div class="submenu">
+              <a href="#Artigo1">Artigo1</a>
+              <a href="#Artigo2">Artigo2</a>
+              <a href="#Artigo3">Artigo3</a>
+              <a href="#Artigo4">Artigo4</a>
+            </div>
+           </li>
+          <li>
+            <a href="IDE.html" class="btn">Principais IDEs</a>
+            <div class="submenu">
+              <a href="#IDE1">IDE1</a>
+              <a href="#IDE2">IDE2</a>
+              <a href="#IDE3">IDE3</a>
+              <a href="#IDE4">IDE4</a>
+            </div>
+          </li>
+          <li>
+            <a href="exercicio.html" class="btn">Pratique</a>
+            <div class="submenu">
+              <a href="#Exercicio1">Exercício 1</a>
+              <a href="#Exercicio2">Exercício 2</a>
+              <a href="#Exercicio3">Exercício 3</a>
+              <a href="#Exercicio4">Exercício 4</a>
+              <a href="#Exercicio5">Exercício 5</a>
+              <a href="#Exercicio6">Exercício 6</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <img src="img\TopoTela.jpg" alt="Java Basic" />
+      <img src="logo\LogoDestraJava.png" alt="Minha Logo" class="logo" />
+    </header>
+    <main>
+      <section id="Pratique">
+        <h1>Pratique</h1>
+      <!--Inserindo uma imagem na pagina-->
+    <img src=".\img\Pratique.jpg" alt="Imagem de exercícios" style="display: block; margin: 0 auto;">
+      <section id="exercicios">
+        <h2>Exercícios</h2>
+        <p>Nessa seção você encontrará diversos exercícios que lhe possibilitarão aplicar os conhecimentos adquiridos em nosso site</p>
+        <section id="Exercicio1">
+        <h3>Exercício 1</h3>
+        <p><b>Escreva um programa que, com base em uma temperatura em graus celsius, a converta e exiba em Kelvin (K), 
+            Réaumur (Re), Rankine (Ra) e Fahrenheit (F), seguindo as fórmulas: F = C * 1.8 + 32; K = C + 273.15; Re = C * 0.8; Ra = 
+            C * 1.8 + 32 + 459.67</b></p>
+        <p>Antes de ver a resolução do exercício, tente fazer sozinho e depois compare com minha versão, pois não se aprende a programar 
+          copiando códigos! Vamos começar declarando todas as variáveis que vamos utilizar como double, que são: C, K, F, Re e Ra. Para 
+          fazer os cálculos, vamos considerar a temperatura em Celsius como 2.43 (mas pode ser qualquer valor que você desejar). Em seguida, 
+          vamos calcular as fórmulas das respectivas temperaturas, conforme dito no enunciado. Por fim, baste exibir os dados, vamos utilizar 
+          o System.out.println para exibir uma mensagem personalizada e a respectiva temperatura calculada.</p>
+        <h3>Resolução - Exercício 1</h3>
+        <img src=".\img\Exercicio1.png" alt="Exercício1" style="display: block; margin: 0 auto;">
+      </section>
+        <hr>
+        <section id="Exercicio2">
+        <h3>Exercício 2</h3>
+        <p><b>Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 10 pessoas.
+            Fazer um algoritmo que calcule e escreva:
+            a. a maior e a menor altura do grupo;
+            b. média de altura dos homens;
+            c. o número de mulheres.</b></p>
+        <p>A resolução deste exercício é um pouco mais difícil que os demais dessa lista, pois envolve mais lógica e o uso de laços de repetição mas,
+          não deixe de tentar fazer também! Vamos a resolução. Vamos declarar as variável inteiras sexo, qtMulheres e qtHomens e as variáveis do tipo 
+          float como altura, soma, mediaHomens, maior e menor; a maioria dessas variáveis precisam ser inicializadas com o valor de 0, pois elas serão 
+          utilizadas para realizar teste lógicos e operações matemáticas. Para a entrada de dados, vamos chamar a classe Scanner (e importa-la) colocando 
+          o nome de entrada, por questões de segurança, vamos fechar este campo de entrada já no final do código com o comando entrada.close(). Agora 
+          começaremos a lógica do exercício propriamente dito.</p>
+
+        <p>Vamos criar um laço de repetição(for) com 10 voltas que irá armazenar a altura e sexo digitados pelo usuário. Para facilitar, criei uma mensagem 
+          pedindo o sexo (1-Mulher e 2-Homem) para evitar utilizar String e métodos para validar textos. Em seguida, chamamos a classe entrada para receber 
+          este valor, armazenando na variável sexo. Pedimos agora para inserir a altura, recebemos este valor e armazenamos na variável altura. Para verificar 
+          se o sexo foi de Homem ou Mulher, implementaremos um condicional if testando os valor para 1, para 2 e para 3 (exibindo mensagem de número inválido). 
+          Caso o sexo seja 1 (mulher), vamos atribuir um valor de +1 na variável que conta o número de mulheres (qtMulheres) através do operador ++. Caso seja 
+          homem, também atribuímos ++ para a variável (qtHomens), pois precisaremos dela na hora de calcular a média da altura dos homens, e guardamos o valor 
+          da altura na variável da somaH (que chama ela mesma somada com a altura do homem).</p>
+        <p>
+          Agora, vamos criar mais um condicional if para verificar qual é a maior e menor altura, para isso, basta comparar se a altura digitada é maior que o 
+          valor da variável maior e, se for verdade, essa variável passará a ter o valor da altura digitada. Para saber a menor altura, a lógica é o mesmo, se 
+          a altura atual for menor que a variável menor, ela passará a ocupar o valor da variável. Agora finalizamos todas as operações do laço for, vamos calcular
+          a média das alturas dos homens, dividindo a soma das alturas pela quantidade de homens. Por fim, é só nós exibirmos todos os valores encontrados na tela
+          e terminamos nosso exercício.</p>
+        <p>
+          CORREÇÃO: cometi um erro na declaração do valor da variável menor, como ela é igual a 0, nenhuma altura digitada vai substituir ela, pois não há altura 
+          negativa. Para corrigir, troque o valor da inicialização por 10. Vai ficar assim: menor=10;</p>
+        <h3>Resolução - Exercício 2</h3>
+        <img src=".\img\Exercicio2.png" alt="Exercício2" style="display: block; margin: 0 auto;">
+        </section>
+        <hr>
+        <section id="Exercicio3">
+        <h3>Exercício 3</h3>
+        <p><b>Criar um programa que calcule a média de salários de uma empresa, pedindo ao usuário a grade de funcionários e os salários, e devolvendo a 
+        média salarial.</b></p>
+        <p>Vamos declarar as variáveis de quatro salários dos funcionários e da média como double e definir alguns valores para cada um dos salários. 
+        Em seguida, vamos calcular a média dos mesmos, para isso, basta somar todos os salários e dividir pela quantidade de funcionários (que serão 4). 
+        Para finalizar, é só exibir a média na tela!</p>
+        <h4>Resolução - Exercício 3</h4>
+        <img src=".\img\Exercicio3.png" alt="Exercício3" style="display: block; margin: 0 auto;">
+        </section>
+        <hr>
+        <section id="Exercicio4"></section>
+        <h3>Exercício 4</h3>
+        <p><b>Uma parede em formato retangular, cuja altura é hp (altura da parede) e a largura lp (largura da parede) precisa ser coberta por azulejos 
+          também retangulares. O azulejo retangular tem dimensões ha (altura do azulejo) e la (largura do azulejo). Escreva um programa que leia as quatro 
+          medidas hp, lp, ha e la, calcule e imprima quanto azulejos com as medidas dadas são necessários para cobrir a parede dada.</b></p>
+        <p>Começamos declarando as variáveis como double: hp, lp, ha, la e qtd. Vamos colocar alguns valores para a dimensão da parede e do azulejo 
+        (coloquei a parede como 2.6 x 1.6 e o azulejo como 0.35 x 0.3). Em seguida, vamos calcular a quantidade de azulejos necessários, basta multiplicar
+         as duas dimensões da parede, para descobrir a área, e dividir pela multiplicação das duas dimensões do azulejo. Vai ficar assim: qtd = (hp * lp) / (ha * la). 
+         Por fim, é só exibir a quantidade de azulejos que será necessária para cobrir toda a parede.</p>
+        <h3>Resolução - Exercício 4</h3>
+        <img src=".\img\Exercicio4.png" alt="Exercício4" style="display: block; margin: 0 auto;">
+        </section>
+        <hr>
+        <section id="Exercicio5"></section>
+        <h3>Exercício 5</h3>
+        <p><b>5. Calcular e apresentar o valor do volume de uma lata de óleo, utilizando fórmula: V = 3.14159 * R * R * A, em que as variáveis: V, R e A representam 
+        respectivamente o volume, o raio e a altura.</b></p>
+        <p>Vamos declarar as variáveis V, R e A como double e definir um valor qualquer para as variáveis de altura e de raio. Agora vamos escrever a fórmula, 
+        conforme dita no enunciado e, em seguida, exibir na tela uma mensagem contendo o resultado do volume encontrado.</p>
+        <h3>Resolução - Exercício 5</h3>
+        <img src=".\img\Exercicio5.png" alt="Exercício5" style="display: block; margin: 0 auto;">
+        </section>
+        <hr>
+        <section id="Exercicio6"></section>
+        <h3>Exercício 6</h3>
+        <p><b>6. Escreva um programa para determinar a quantidade de cavalos necessários para se levantar uma massa de m quilogramas a uma altura de h metros em t 
+        segundos. Considere cavalos = (m * h / t) / 745,6999</b></p>
+        <p>Para resolver este exercício, vamos declarar nossa variáveis m, h, t e cavalos como double. Como não vamos utilizar o Scanner para entrada de dados,
+        vamos colocar alguns valores aleatórios como massa, altura e tempo. Em seguida, vamos criar a fórmula que irá calcular quantos cavalos são necessários. 
+        Cavalos será a massa multiplicada pela atura, multiplicada pelo tempo (em segundos), e tudo isso dividido pela constante 745,699.</p>
+        <h3>Resolução - Exercício 6</h3>
+        <img src=".\img\Exercicio6.png" alt="Exercício6" style="display: block; margin: 0 auto;">
+        </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 OneBitCode - Tags Semânticas</p>
+    </footer>
+  </body>
+</html>
