@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 5px 10px;
+      }
+
+      th {
+        background-color: rgb(21, 4, 98);
+        color: white;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /*odd aplicado aos elemntos inpare*/
+      table tr:nth-child(odd) {
+        background-color: #ddd;
+      }
+
+      /*odd aplicado aos elemntos par*/
+      table tr:nth-child(even) {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabelas</h1>
+    <h3>Tabelas Normal</h3>
+    <table>
+      <!--TH Formatar Cabeçlho-->
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Telefone</th>
+      </tr>
+      <!--TD Formatar registros da tabela-->
+      <tr>
+        <td>Sergio</td>
+        <td>48</td>
+        <td>(83)99999-9999</td>
+      </tr>
+      <tr>
+        <td>Gustavo</td>
+        <td>35</td>
+        <td>(83)99999-9999</td>
+      </tr>
+      <tr>
+        <td>Tito</td>
+        <td>33</td>
+        <td>(83)99999-9999</td>
+      </tr>
+      <tr>
+        <td>Thiago Limeira</td>
+        <td>33</td>
+        <td>(83)99999-9999</td>
+      </tr>
+    </table>
+    <h3>Tabela com Colspan</h3>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th colspan="2">Telefone</th>
+      </tr>
+      <tr>
+        <td>Sergio</td>
+        <td>48</td>
+        <td>(83)99999-9999</td>
+        <td>(83)88888-88888</td>
+      </tr>
+      <tr>
+        <td>Gustavo</td>
+        <td>35</td>
+        <td>(83)99999-9999</td>
+        <td>(83)99999-9999</td>
+      </tr>
+      <tr>
+        <td>Tito</td>
+        <td>33</td>
+        <td>(83)99999-9999</td>
+        <td>(83)88888-88888</td>
+      </tr>
+      <tr>
+        <td>Thiago Limeira</td>
+        <td>33</td>
+        <td>(83)99999-9999</td>
+        <td>(83)88988-1111</td>
+      </tr>
+    </table>
+    <h3>Tabela com Rowspan</h3>
+    <table>
+      <tr>
+        <th>Sexo</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th colspan="2">Telefone</th>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Sergio</td>
+        <td>48</td>
+        <td>(83)99999-9999</td>
+        <td>(83)88888-88888</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Gustavo</td>
+        <td>35</td>
+        <td>(83)99999-9999</td>
+        <td>(83)77777-5555</td>
+      </tr>
+      <tr>
+        <td rowspan="2">M</td>
+        <td>Tito</td>
+        <td>33</td>
+        <td>(83)99999-9999</td>
+        <td>(83)88888-88888</td>
+      </tr>
+      <tr>
+        <td>Thiago Limeira</td>
+        <td>33</td>
+        <td>(83)99999-9999</td>
+        <td>(83)45454-4444</td>
+      </tr>
+    </table>
+  </body>
+</html>
