@@ -77,7 +77,12 @@ aside {
   margin-top: 20px;
   text-align: left;
 }
-
+#ide img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 p {
   text-align: justify;
 }
@@ -104,6 +109,18 @@ footer img {
 }
 html {
   scroll-behavior: smooth;
+}
+#videosPostagem iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#exercicios img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #lista-videos {
