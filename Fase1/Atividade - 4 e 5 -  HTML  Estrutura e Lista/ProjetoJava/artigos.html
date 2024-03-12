@@ -5,17 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="icon" href="icon/LOGOJAVA.ico" type="image/ico" />
+    <link rel="icon" href="img/LOGOJAVA.ico" type="image/ico" />
   </head>
   <body>
     <header>
       <img src="img/NovaLogoDestraJava.png" alt="Logo Destrajava" />
-      <h1>MATERIAL ACADÊMICO</h1>
+      <h1>Material Acadêmico</h1>
     </header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="artigos.html">Material Acadêmico</a></li>
+        <li><a href="artigo.html">Material Acadêmico</a></li>
         <li><a href="videos.html">Vídeos</a></li>
         <li><a href="ide.html">IDE</a></li>
         <li><a href="exercicios.html">Pratique</a></li>
@@ -30,244 +30,139 @@
         </li>
       </ul>
     </nav>
-    <div class="row">
-      <section id="artigos">
-        <h2></h2>
-          <b
-            >Nessa seção você encontrará diversos exercícios que lhe
-            possibilitarão aplicar os conhecimentos adquiridos em nosso site</b
-          >
-        </h2>
-
+      <div class="row">
+      <section id="Livros">
         <article class="card">
-          <h2 id="artigo">Artigo 01</h2>
+        <h2>LIVROS</h2>
+        <h2 id="Livro1">Java Básico 1</h2>
       
-          <p>
-            <b
-              >Escreva um programa que, com base em uma temperatura em graus
-              celsius, a converta e exiba em Kelvin (K), Réaumur (Re), Rankine
-              (Ra) e Fahrenheit (F), seguindo as fórmulas: F = C * 1.8 + 32; K =
-              C + 273.15; Re = C * 0.8; Ra = C * 1.8 + 32 + 459.67</b
-            >
-          </p>
-          <p>
-            Antes de ver a resolução do exercício, tente fazer sozinho e depois
-            compare com minha versão, pois não se aprende a programar copiando
-            códigos! Vamos começar declarando todas as variáveis que vamos
-            utilizar como double, que são: C, K, F, Re e Ra. Para fazer os
-            cálculos, vamos considerar a temperatura em Celsius como 2.43 (mas
-            pode ser qualquer valor que você desejar). Em seguida, vamos
-            calcular as fórmulas das respectivas temperaturas, conforme dito no
-            enunciado. Por fim, baste exibir os dados, vamos utilizar o
-            System.out.println para exibir uma mensagem personalizada e a
-            respectiva temperatura calculada.
-          </p>
+        <!--Primeiro Livro-->
+        
+        <h4>Livro Java Básico 1 (Paulo Henrique Cayres)</h4>
+        <p>O livro Java básico 1, do autor Paulo Henrique Cayres, é um material que abrange toda a parte básica
+            da linguagem de programação Java, trazendo conceitos elementares como algorítimos, histórico da linguagem
+            , fundamentos de prgrmação em java, controle de fluco, Arrays, Classes e objetos.</p> 
+      
+      <div class="flex-container">
+      <div class="image-with-text">
+        <a href="https://d1wqtxts1xzle7.cloudfront.net/48977259/Java_Basico-libre.pdf?1474349223=&response-content-disposition=inline%3B+filename%3DJava_basico_1.pdf&Expires=1710275508&Signature=YcC33WJUnV99zwE1kfzTfeu0SSZPJI5-UYWg8huu7KpTOzZOC~zEYYoT4Eby0qFRUB-dbRPCCNTID6Y2xtSNrvGUpSVhceaK0GDtP9ieNKhrJu2pMn0kqIGb8FxPxKACh9IbrEieoTy-pyrxRqerePdzUoveJYnhKi-bZifs14NMgqrkD2oaa81MbZ6AZEJWca6FRa1mbZh40f3myWaOdO1XWB2~hbwURncbY0bN1LPEMLctywlr-az7Yj0PMIlRojvUajX-Ze1gR3IzPbdLrfBT7qWcQn6a-WYW~XFB8zmzYFX6sgdCYks8UUkZkIQXXeDdAe~JaU2aMgX5zIWO9A__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank" >Livro Java Básico 1</a>
+      </div>
+      </div>
+        <img src="img/CapaJavaBasico1.png" width="60px" height="700px" alt="Java Basic"/>
+      
+        <!--Segundo livro Livro-->
 
-          <br />
-          <h2 id="Exercicio2">Exercicio2</h2>
+        <h2 id="Livro2">Java Para Iniciantes 6ª edição (Herbert Schildt)</h2>
+        <p>
+          O objetivo deste livro é ensinar os fundamentos da programação Java. Ele usa uma abordagem
+          passo a passo complementada por vários exemplos, testes e projetos, e não exige experiência prévia
+          em programação. O livro começa com os aspectos básicos, como a compilação e execução de um programa java
+          e, em seguida, disculte as palavras-chave, os recursos mais avançados de Java. 
+        </p>
+      <div class="flex-container">
+      <div class="image-with-text">
+        <a href="https://books.google.com.br/books?hl=pt-BR&lr=&id=s73xBwAAQBAJ&oi=fnd&pg=PR1&dq=java+para+iniciantes&ots=V10hlyEJjr&sig=5cE3vmSctISd-OqJGftJDnECHC0#v=onepage&q=java%20para%20iniciantes&f=false" target="_blank">Livro Java Para Iniciantes 6ª edição</a>
+      </div>
+      </div>
+        <img src="img\Capa_Java_Iniciante.jpg" width="700px" height="700px" alt="Java Basic"/>
 
-          <p>
-            <b
-              >Tem-se um conjunto de dados contendo a altura e o sexo
-              (masculino, feminino) de 10 pessoas. Fazer um algoritmo que
-              calcule e escreva: a. a maior e a menor altura do grupo; b. média
-              de altura dos homens; c. o número de mulheres.</b
-            >
-          </p>
-          <p>
-            A resolução deste exercício é um pouco mais difícil que os demais
-            dessa lista, pois envolve mais lógica e o uso de laços de repetição
-            mas, não deixe de tentar fazer também! Vamos a resolução. Vamos
-            declarar as variável inteiras sexo, qtMulheres e qtHomens e as
-            variáveis do tipo float como altura, soma, mediaHomens, maior e
-            menor; a maioria dessas variáveis precisam ser inicializadas com o
-            valor de 0, pois elas serão utilizadas para realizar teste lógicos e
-            operações matemáticas. Para a entrada de dados, vamos chamar a
-            classe Scanner (e importa-la) colocando o nome de entrada, por
-            questões de segurança, vamos fechar este campo de entrada já no
-            final do código com o comando entrada.close(). Agora começaremos a
-            lógica do exercício propriamente dito.
-          </p>
+        <!--Terceiro Livro-->
 
-          <p>
-            Vamos criar um laço de repetição(for) com 10 voltas que irá
-            armazenar a altura e sexo digitados pelo usuário. Para facilitar,
-            criei uma mensagem pedindo o sexo (1-Mulher e 2-Homem) para evitar
-            utilizar String e métodos para validar textos. Em seguida, chamamos
-            a classe entrada para receber este valor, armazenando na variável
-            sexo. Pedimos agora para inserir a altura, recebemos este valor e
-            armazenamos na variável altura. Para verificar se o sexo foi de
-            Homem ou Mulher, implementaremos um condicional if testando os valor
-            para 1, para 2 e para 3 (exibindo mensagem de número inválido). Caso
-            o sexo seja 1 (mulher), vamos atribuir um valor de +1 na variável
-            que conta o número de mulheres (qtMulheres) através do operador ++.
-            Caso seja homem, também atribuímos ++ para a variável (qtHomens),
-            pois precisaremos dela na hora de calcular a média da altura dos
-            homens, e guardamos o valor da altura na variável da somaH (que
-            chama ela mesma somada com a altura do homem).
-          </p>
-          <p>
-            Agora, vamos criar mais um condicional if para verificar qual é a
-            maior e menor altura, para isso, basta comparar se a altura digitada
-            é maior que o valor da variável maior e, se for verdade, essa
-            variável passará a ter o valor da altura digitada. Para saber a
-            menor altura, a lógica é o mesmo, se a altura atual for menor que a
-            variável menor, ela passará a ocupar o valor da variável. Agora
-            finalizamos todas as operações do laço for, vamos calcular a média
-            das alturas dos homens, dividindo a soma das alturas pela quantidade
-            de homens. Por fim, é só nós exibirmos todos os valores encontrados
-            na tela e terminamos nosso exercício.
-          </p>
-          <p>
-            CORREÇÃO: cometi um erro na declaração do valor da variável menor,
-            como ela é igual a 0, nenhuma altura digitada vai substituir ela,
-            pois não há altura negativa. Para corrigir, troque o valor da
-            inicialização por 10. Vai ficar assim: menor=10;
-          </p>
+        <h2 id="Livro3">Livro Java Para Leigos (Barry Burd)</h2>
+        <p>
+          Escrito por uma das maiores referências da programação, Barry Burd, o Java Para Leigos, Tradução da 5ª Edição, traz informações atualizadas sobre linguagens de programação,
+           o básico da programação orientada a objetos, direcionamentos de como criar aplicativos utilizando o JDK7, reutilizar códigos e mais!<br/>
+          Este livro é dedicado para programadores inciantes e experientes e, até mesmo, pessoas curiosas que querem entender um pouco mais a respeito do tema.<br/>
+          Segue o padrão da Para Leigos, com linguagem de fácil acesso e explicações passo a passo para que programar se torne uma atividade fácil e divertida!
+        </p>
 
-          <h2 id="Exercicio3">Exercicio3</h2>
-          <p>
-            <b
-              >Criar um programa que calcule a média de salários de uma empresa,
-              pedindo ao usuário a grade de funcionários e os salários, e
-              devolvendo a média salarial.</b
-            >
-          </p>
-          <p>
-            Vamos declarar as variáveis de quatro salários dos funcionários e da
-            média como double e definir alguns valores para cada um dos
-            salários. Em seguida, vamos calcular a média dos mesmos, para isso,
-            basta somar todos os salários e dividir pela quantidade de
-            funcionários (que serão 4). Para finalizar, é só exibir a média na
-            tela!
-          </p>
+        <div class="flex-container">
+        <div class="image-with-text">
+          <a href="https://www.amazon.com.br/Java-Para-Leigos-Barry-Burd-ebook/dp/B085Q43VRD" target="_blank" >Livro Java Para Leigos</a>
+        </div>
+        </div>
+          <img src="img/CapaJavaLeigos.jpg" width="363px" height="700px" alt="Java Basic"/>
 
-          <h2 id="Exercicio4">Exercicio4</h2>
-          <p>
-            <b
-              >Uma parede em formato retangular, cuja altura é hp (altura da
-              parede) e a largura lp (largura da parede) precisa ser coberta por
-              azulejos também retangulares. O azulejo retangular tem dimensões
-              ha (altura do azulejo) e la (largura do azulejo). Escreva um
-              programa que leia as quatro medidas hp, lp, ha e la, calcule e
-              imprima quanto azulejos com as medidas dadas são necessários para
-              cobrir a parede dada.</b
-            >
-          </p>
-          <p>
-            Começamos declarando as variáveis como double: hp, lp, ha, la e qtd.
-            Vamos colocar alguns valores para a dimensão da parede e do azulejo
-            (coloquei a parede como 2.6 x 1.6 e o azulejo como 0.35 x 0.3). Em
-            seguida, vamos calcular a quantidade de azulejos necessários, basta
-            multiplicar as duas dimensões da parede, para descobrir a área, e
-            dividir pela multiplicação das duas dimensões do azulejo. Vai ficar
-            assim: qtd = (hp * lp) / (ha * la). Por fim, é só exibir a
-            quantidade de azulejos que será necessária para cobrir toda a
-            parede.
-          </p>
+        <!--Quarto Livro-->
 
-          <h2 id="Exercicio5">Exercicio5</h2>
-          <p>
-            <b
-              >5. Calcular e apresentar o valor do volume de uma lata de óleo,
-              utilizando fórmula: V = 3.14159 * R * R * A, em que as variáveis:
-              V, R e A representam respectivamente o volume, o raio e a
-              altura.</b
-            >
-          </p>
-          <p>
-            Vamos declarar as variáveis V, R e A como double e definir um valor
-            qualquer para as variáveis de altura e de raio. Agora vamos escrever
-            a fórmula, conforme dita no enunciado e, em seguida, exibir na tela
-            uma mensagem contendo o resultado do volume encontrado.
-          </p>
+        <h2 id="Livro4">Livro Java do Zero, Uma Viagem ao Mundo Java (Daniel Abella)</h4>
 
-          <h2 id="Exercicio6">Exercicio6</h2>
-          <p>
-            <b
-              >6. Escreva um programa para determinar a quantidade de cavalos
-              necessários para se levantar uma massa de m quilogramas a uma
-              altura de h metros em t segundos. Considere cavalos = (m * h / t)
-              / 745,6999</b
-            >
-          </p>
-          <p>
-            Para resolver este exercício, vamos declarar nossa variáveis m, h, t
-            e cavalos como double. Como não vamos utilizar o Scanner para
-            entrada de dados, vamos colocar alguns valores aleatórios como
-            massa, altura e tempo. Em seguida, vamos criar a fórmula que irá
-            calcular quantos cavalos são necessários. Cavalos será a massa
-            multiplicada pela atura, multiplicada pelo tempo (em segundos), e
-            tudo isso dividido pela constante 745,699.
-          </p>
+        <p>Este livro Apresenta os principais pontos da Linguagem Java de maneira objetiva e clara, sem arrudeios!<br/>Possuindo 8 capítulos
+        abordando temas como: Classes, Variáveis, Operadores, Estruturas de Fluxo/Controle, Orientação à Objetos, IDE Eclipse, Pacotes, Arrays, 
+        Collections, Interfaces, Enum, Records, Exceptions, Sealed Classes e muito mais!<br/>Uma abordagem hands-on, partindo da apresentação do conteúdo por texto e,
+         em dados momentos, referenciando artefatos externos, como vídeos e guias de referências rápidas.</p>
 
-          <h2 id="Resolucao">Resoluções</h2>
+        <div class="flex-container">
+        <div class="image-with-text">
+           <a href="https://daniel-abella.com/livros/java/download/#" target="_blank" >Livro Java do Zero</a>
+        </div>
+        </div>
+          <img src="img/LivroAbella.jpg" width="50%" height="50%" alt="Java Basic"/>
 
-          <h3>Resolução - Exercício 1</h3>
-          <img
-            src=".\img\Exercicio1.png"
-            alt="Exercício1"
-            style="display: block; margin: 0 auto"
-          />
+        
 
-          <h3>Resolução - Exercício 2</h3>
-          <img
-            src=".\img\Exercicio2.png"
-            alt="Exercício2"
-            style="display: block; margin: 0 auto"
-          />
-          <h4>Resolução - Exercício 3</h4>
-          <img
-            src=".\img\Exercicio3.png"
-            alt="Exercício3"
-            style="display: block; margin: 0 auto"
-          />
-          <h3>Resolução - Exercício 4</h3>
-          <img
-            src=".\img\Exercicio4.png"
-            alt="Exercício4"
-            style="display: block; margin: 0 auto"
-          />
-          <h3>Resolução - Exercício 5</h3>
-          <img
-            src=".\img\Exercicio5.png"
-            alt="Exercício5"
-            style="display: block; margin: 0 auto"
-          />
-          <h3>Resolução - Exercício 6</h3>
-          <img
-            src=".\img\Exercicio6.png"
-            alt="Exercício6"
-            style="display: block; margin: 0 auto"
-          />
+        <!--Seção para artigos científicos-->
+
+        <section id="Artigos-cientificos"></section>
+          <h3>ARTIGOS CIENTÍFICOS</h3>
+
+          <!--Primeiro artigo-->
+
+          <h2 id="Artigo1">O artigo 'Portugol Studio: Uma IDE para Iniciantes em Programação'</h2>
+          <p>O artigo 'Portugol Studio: Uma IDE para Iniciantes em Programação' vem trazer informações importantes para os iniciantes em 
+            programação, pois, muitas vezes as pessoas pouco acostumadas com as tecnologias avançadas das IDEs, acabam desestimuladas a iniciarem
+            por não conseguir configurar o ambiente de escritas de códigos. Por esse motivo, o artigo aborda uma ferramenta de fácil manuseio e com a 
+            linguagem Portugol, caracterizada por fascilitar o entendimento da lógica de programaçao.</p>
+          
+
+          <div class="flex-container">
+           <div class="image-with-text">
+           <a href="https://sol.sbc.org.br/index.php/wei/article/view/10954" target="_blank" >Artigo Portugol Studio: Uma IDE para iniciantes em Programação</a>
+          </div>
+          </div>
+            <img src="img/ArtigoPortugol.jpg" width="500px" height="700px" alt="Java Basic";> 
+
+          <!--Segundo artigo-->
+
+          <h2 id="Artigo2">A Linguagem Scratch no Ensino de Programação: Um Relato de Experiência com Alunos Iniciantes do Curso de Licenciatura em Computação</h2>
+          <p>Visando investigar  e testar alternativas para promoção de melhorias no processo de ensino-aprendizagem para iniciantes em programação de computadores, 
+            este trabalho apresenta  parte  dos  resultados  de  um  experimento  realizado  para  avaliar  os  efeitos  do uso  do  Scratch  no  ensino-aprendizagem
+            de  conceitos centrais  de  programação  em  um grupo de alunos calouros do curso de Licenciatura em Computação da UFRA</p>
+
+          <div class="flex-container">
+          <div class="image-with-text">
+            <a href="https://sol.sbc.org.br/index.php/wei/article/view/10973" target="_blank" >Artigo Utilização de Scratch no ensino de programação</a>
+          </div>
+          </div>
+           <img src="img/ArtigoScratch.jpg" width="500px" height="700px" alt="Java Basic";>
+          
         </article>
       </section>
       <aside>
         <article class="card">
-          <h3>Lista de Exercicios</h3>
+          <h3>Tópicos</h3>
           <ul id="lista-videos">
-            <li><a href="#Exercicio1">&#10148; Exercício 01 </a></li>
-            <li><a href="#Exercicio2">&#10148; Exercício 02 </a></li>
-            <li><a href="#Exercicio3">&#10148; Exercício 03 </a></li>
-            <li><a href="#Exercicio4">&#10148; Exercício 04 </a></li>
-            <li><a href="#Exercicio5">&#10148; Exercício 05 </a></li>
-            <li><a href="#Exercicio6">&#10148; Exercício 06 </a></li>
-            <li><a href="#Resolucao">&#10148; Resolução </a></li>
+            <li><a href="#Livro1">&#10148; Java Básico 1</a></li>
+            <li><a href="#Livro2">&#10148; Java Para Iniciantes</a></li>
+            <li><a href="#Livro3">&#10148; Java Para Leigos</a></li>
+            <li><a href="#Livro4">&#10148; Java do Zero</a></li>
+            <li><a href="#Artigo1">&#10148; Artigo 1</a></li>
+            <li><a href="#Artigo2">&#10148; Artigo 2</a></li>
           </ul>
         </article>
       </aside>
       <a id="link-topo" href="#">&#9650;</a>
     </div>
-    <footer>
-      <img src="img/NovaLogoDestraJava.png" alt="Logo Destrajava" />
-      <dl>
-        <dt>Email:</dt>
-        <dd>devunifacisa@gmail.com</dd>
-        <br />
-        <dt>Telefone</dt>
-        <dd>+55(83) 99999-9999</dd>
-      </dl>
-    </footer>
-  </body>
+      <footer>
+        <img src="img/NovaLogoDestraJava.png" alt="Logo Destrajava" />
+        <dl>
+          <dt>Email:</dt>
+          <dd>devunifacisa@gmail.com</dd>
+          <br />
+          <dt>Telefone</dt>
+          <dd>+55(83) 99999-9999</dd>
+        </dl>
+      </footer>
+    </main>
+    </body>
 </html>
-
