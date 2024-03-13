@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>DESTRAjaVA</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/contato.css" type="text/css" />
+    <link rel="icon" href="icon/LOGOJAVA.ico" type="image/ico" />
+  </head>
+  <body>
+    <header>
+      <img src="img/NovaLogoDestraJava.png" alt="Logo Destrajava" />
+      <h1>CONTATO</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artigos.html">Material Acadêmico</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
+        <li><a href="ide.html">IDE</a></li>
+        <li><a href="exercicios.html">Pratique</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=UeTaRn7l2N0&list=PLK7wWNxoo1nkZXg4pqAfNvaKe1FPkfR3V"
+            target="_blank"
+            >Canal do Youtube Daniel Abella</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="row">
+      <form
+        action="https://api.staticforms.xyz/submit"
+        method="post"
+        class="cardContato"
+      >
+        <input
+          type="hidden"
+          name="accessKey"
+          value="05fa2a25-558d-488e-a232-db3d002fc1bf"
+        />
+
+        <label for="inputNome">Primeiro Nome: </label>
+        <p></p>
+        <input
+          type="text"
+          id="inputNome"
+          name="name"
+          required
+          minlength="2"
+          maxlength="30"
+        />
+
+        <label for="inputEmail">Endereço de E-mail: </label>
+        <p></p>
+        <input
+          type="email"
+          id="inputEmail"
+          name="email"
+          required
+          maxlength="50"
+        />
+
+        <label for="textAreaMensagem">Mensagem: </label>
+        <p></p>
+        <textarea
+          name="message"
+          id="textAreaMensagem"
+          required
+          maxlength="250"
+        ></textarea>
+
+        <label for="nivelAprendizado">Nível de Aprendizado:</label>
+        <p></p>
+        <table>
+          <tr>
+            <td>
+              <label for="basico" class="radio-label">Básico</label>
+              <input
+                type="radio"
+                id="basico"
+                name="nivel_aprendizado"
+                value="Básico"
+              />
+            </td>
+            <td>
+              <label for="medio" class="radio-label">Médio</label>
+              <input
+                type="radio"
+                id="medio"
+                name="nivel_aprendizado"
+                value="Médio"
+              />
+            </td>
+            <td>
+              <label for="avancado" class="radio-label">Avançado</label>
+              <input
+                type="radio"
+                id="avancado"
+                name="nivel_aprendizado"
+                value="Avançado"
+              />
+            </td>
+          </tr>
+        </table>
+        <p></p>
+        <button>Enviar Mensagem</button>
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="http://127.0.0.1:5500/contato.html"
+        />
+      </form>
+    </div>
+    <footer>
+      <img src="img/NovaLogoDestraJava.png" alt="Logo Destrajava" />
+      <dl>
+        <dt>Email:</dt>
+        <dd>devunifacisa@gmail.com</dd>
+        <br />
+        <dt>Telefone</dt>
+        <dd>+55(83) 99999-9999</dd>
+      </dl>
+    </footer>
+  </body>
+</html>
