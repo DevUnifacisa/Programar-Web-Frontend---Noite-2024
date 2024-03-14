@@ -144,15 +144,15 @@ html {
   margin-right: auto;
 }
 
-#lista-videos {
+#lista {
   list-style-type: none;
   padding: 0;
 }
-#lista-videos a {
+#lista a {
   text-decoration: none;
   color: black;
 }
-#lista-videos li {
+#lista li {
   border-bottom: 1px solid #ddd;
   padding: 8px 16px;
 }
