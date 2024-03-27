@@ -21,12 +21,11 @@ header img {
 }
 header h1 {
   font-size: 80px;
-  color: white;
+  color: rgb(116, 13, 13);
 }
-
 nav ul {
   list-style-type: none;
-  background-color: rgb(113, 131, 136);
+  background-color: rgb(116, 13, 13);
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -90,8 +89,8 @@ p {
 
 footer {
   padding: 20px;
-  background-color: rgb(151, 168, 173);
-  color: white;
+  background-color: #9ea0a0;
+  color: rgb(116, 13, 13);
   margin-top: 20px;
 }
 footer dt {
