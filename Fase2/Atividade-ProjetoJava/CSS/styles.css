@@ -23,6 +23,7 @@ header h1 {
   font-size: 80px;
   color: rgb(116, 13, 13);
 }
+
 nav ul {
   list-style-type: none;
   background-color: rgb(116, 13, 13);
@@ -225,5 +226,134 @@ table tr:nth-child(even) {
     float: none;
     text-align: center;
     width: 100%;
+  }
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Altera a direção do flex para coluna */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-top: 10px;
+  }
+
+  .nav-list li {
+    margin: 10px 0; /* Adiciona margem entre os itens */
+  }
+
+  .menu-icon {
+    display: flex; /* Garante que o ícone do menu seja exibido */
+  }
+
+  .nav-list {
+    display: none; /* Oculta a lista de navegação */
+  }
+
+  .menu-icon {
+    display: flex; /* Exibe o ícone do menu */
+    align-self: flex-end; /* Alinha o ícone do menu à direita */
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Altera a direção do flex para coluna */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-top: 10px;
+  }
+
+  .nav-list li {
+    margin: 10px 0; /* Adiciona margem entre os itens */
+  }
+
+  .menu-icon {
+    display: flex; /* Garante que o ícone do menu seja exibido */
+  }
+
+  .nav-list {
+    display: none; /* Oculta a lista de navegação */
+  }
+
+  .menu-icon {
+    display: flex; /* Exibe o ícone do menu */
+    align-self: flex-end; /* Alinha o ícone do menu à direita */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Altera a direção do flex para coluna */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-top: 10px;
+  }
+
+  .nav-list li {
+    margin: 10px 0; /* Adiciona margem entre os itens */
+  }
+
+  .menu-icon {
+    display: flex; /* Garante que o ícone do menu seja exibido */
+  }
+
+  .nav-list {
+    display: none; /* Oculta a lista de navegação */
+  }
+
+  .menu-icon {
+    display: flex; /* Exibe o ícone do menu */
+    align-self: flex-end; /* Alinha o ícone do menu à direita */
   }
 }
