@@ -5,17 +5,17 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
-  background-color: #c7cecd;
+  background-color: #ffab7c;
 }
 
 header {
   text-align: center;
-  background: hsl(210, 1%, 67%);
+  background: #ffab7c;
   padding: 30px;
 }
 header img {
   float: left;
-  width: 12%;
+  width: 15%;
   margin-top: 0;
   margin-left: 20px;
 }
@@ -45,7 +45,7 @@ nav li {
 
 nav a:hover {
   background-color: white;
-  color: rgb(126, 118, 108);
+  color: #fd8a61;
 }
 img {
   width: 100%;
@@ -90,7 +90,7 @@ p {
 
 footer {
   padding: 20px;
-  background-color: #9ea0a0;
+  background-color: #fd8a61;
   color: rgb(116, 13, 13);
   margin-top: 20px;
 }
@@ -103,7 +103,7 @@ footer dd {
 }
 footer img {
   float: right;
-  width: 8%;
+  width: 12%;
   bottom: 0;
   right: 20px;
   padding: 20px;
@@ -185,7 +185,7 @@ td {
 }
 
 th {
-  background-color: rgb(21, 4, 98);
+  background-color: black;
   color: white;
 }
 * {
@@ -230,7 +230,7 @@ table tr:nth-child(even) {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #fd8a61;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -296,7 +296,6 @@ table tr:nth-child(even) {
     align-self: flex-end; /* Alinha o ícone do menu à direita */
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .navbar {
