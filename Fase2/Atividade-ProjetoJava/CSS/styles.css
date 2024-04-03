@@ -4,8 +4,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0%;
   background-color: #ffe7e7;
+  max-width: 1200px; /* Defina o valor que preferir */
+  margin: 0 auto; /* Centralize o conteúdo na página */
 }
 
 header {
@@ -22,7 +23,7 @@ header img:first-child {
 }
 
 .logo2 {
-  width: 12%;
+  width: 16%;
   position: absolute;
   top: 0;
   left: 5%; /* Ajuste para alinhar a imagem à direita */
@@ -77,7 +78,8 @@ img {
 }
 .row {
   padding: 0 20px;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 section {
@@ -230,9 +232,11 @@ table tr:nth-child(even) {
 /* Formatando Responsividade Tablet*/
 @media screen and (max-width: 768px) {
   section,
-  aside {
+  aside,
+  body {
     width: 100%;
     padding: 0;
+    font-size: 14px;
   }
 }
 /*Celular*/
@@ -386,4 +390,9 @@ table tr:nth-child(even) {
     display: flex; /* Exibe o ícone do menu */
     align-self: flex-end; /* Alinha o ícone do menu à direita */
   }
+}
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
 }
