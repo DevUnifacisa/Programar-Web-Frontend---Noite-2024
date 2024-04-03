@@ -28,30 +28,25 @@ header img:first-child {
   left: 5%; /* Ajuste para alinhar a imagem à direita */
   z-index: 1; /* Para garantir que a segunda imagem fique acima da primeira */
 }
-header h1 {
+h1 {
   font-size: 30px;
   color: rgb(17, 16, 16);
-  position: absolute;
-  top: 60%; /* Alinha o topo do h1 ao meio verticalmente */
-  left: 75%; /* Alinha a esquerda do h1 ao meio horizontalmente */
+  position: relative;
+  padding: 20px;
 }
 
-header p {
+p {
   font-size: 15px;
   color: rgb(17, 16, 16);
   position: relative;
   padding: 20px;
 }
-h1 {
-  font-size: 25px;
-  color: rgb(17, 16, 16);
-  padding: 20px;
-}
+
 nav {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 0px; /* Ajuste conforme necessário para espaçamento entre o topo e a imagem */
+  top: 20px;
+  left: 0px;
+  margin-top: 10px; /* Ajuste conforme necessário para espaçamento entre o topo e a imagem */
 }
 
 nav ul {
@@ -243,7 +238,9 @@ table tr:nth-child(even) {
 /*Celular*/
 @media screen and (max-width: 600px) {
   nav li,
-  header h1 {
+  header h1,
+  h1,
+  p {
     font-size: 20px;
     float: none;
     text-align: center;
@@ -251,21 +248,23 @@ table tr:nth-child(even) {
   }
 }
 @media screen and (max-width: 600px) {
-  header h1 {
+  header h1,
+  h1,
+  p {
     font-size: auto;
     float: none;
     text-align: center;
     width: 100%;
   }
 }
-
 .navbar {
   color: rgb(70, 3, 3);
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 10px 20px;
   font-weight: bold;
+  position: relative;
+  left: 15%;
+  top: 100%;
 }
 
 .nav-list {
@@ -277,11 +276,12 @@ table tr:nth-child(even) {
 
 .nav-list li {
   margin-right: 20px;
+  display: inline-block;
 }
 
 .nav-list li a {
-  color: rgb(70, 3, 3);
-  text-decoration: rgb(238, 255, 205);
+  color: rgb(220, 16, 16);
+  text-decoration: blanchedalmond;
 }
 
 .menu-icon {
@@ -293,7 +293,7 @@ table tr:nth-child(even) {
 .menu-icon-line {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: #464343;
   margin: 3px 0;
 }
 
@@ -329,7 +329,8 @@ table tr:nth-child(even) {
 
 @media screen and (max-width: 600px) {
   .navbar {
-    flex-direction: column; /* Altera a direção do flex para coluna */
+    flex-direction: column;
+    /* Altera a direção do flex para coluna */
   }
 
   .nav-list {
