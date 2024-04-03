@@ -5,47 +5,77 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
-  background-color: #ffab7c;
+  background-color: #ffe7e7;
 }
 
 header {
-  text-align: center;
-  background: #ffab7c;
-  padding: 30px;
+  position: relative;
+  width: 100%;
+  height: auto; /* Permitir que a altura do cabeçalho seja determinada pelo conteúdo */
+  overflow: hidden; /* Para esconder qualquer parte da imagem que exceda a altura do cabeçalho */
 }
-header img {
-  float: left;
-  width: 15%;
-  margin-top: 0;
-  margin-left: 20px;
+
+header img:first-child {
+  width: 100%;
+  max-height: 450px; /* Defina a altura máxima desejada para a primeira imagem */
+  display: block; /* Para evitar espaços indesejados entre as imagens */
+}
+
+.logo2 {
+  width: 12%;
+  position: absolute;
+  top: 0;
+  left: 5%; /* Ajuste para alinhar a imagem à direita */
+  z-index: 1; /* Para garantir que a segunda imagem fique acima da primeira */
 }
 header h1 {
-  font-size: 80px;
-  color: rgb(116, 13, 13);
+  font-size: 30px;
+  color: rgb(17, 16, 16);
+  position: absolute;
+  top: 60%; /* Alinha o topo do h1 ao meio verticalmente */
+  left: 75%; /* Alinha a esquerda do h1 ao meio horizontalmente */
+}
+
+header p {
+  font-size: 15px;
+  color: rgb(17, 16, 16);
+  position: relative;
+  padding: 20px;
+}
+h1 {
+  font-size: 25px;
+  color: rgb(17, 16, 16);
+  padding: 20px;
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0px; /* Ajuste conforme necessário para espaçamento entre o topo e a imagem */
 }
 
 nav ul {
+  width: 100%;
   list-style-type: none;
-  background-color: rgb(116, 13, 13);
-  overflow: hidden;
+  overflow: visible;
   margin: 0;
   padding: 0;
 }
 
 nav a {
-  color: white;
+  color: rgb(116, 13, 13);
   text-decoration: none;
-  padding: 16px;
+  padding: 10px;
   display: block;
 }
 
 nav li {
-  float: left;
+  float: center;
 }
 
 nav a:hover {
-  background-color: white;
-  color: #fd8a61;
+  background-color: rgb(139, 136, 136);
+  color: white;
 }
 img {
   width: 100%;
@@ -89,9 +119,9 @@ p {
 }
 
 footer {
-  padding: 20px;
-  background-color: #fd8a61;
-  color: rgb(116, 13, 13);
+  padding: 10px;
+  background-color: rgb(255, 213, 213);
+  color: rgb(57, 6, 6);
   margin-top: 20px;
 }
 footer dt {
@@ -230,12 +260,12 @@ table tr:nth-child(even) {
 }
 
 .navbar {
-  background-color: #fd8a61;
-  color: #fff;
+  color: rgb(70, 3, 3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  font-weight: bold;
 }
 
 .nav-list {
@@ -250,8 +280,8 @@ table tr:nth-child(even) {
 }
 
 .nav-list li a {
-  color: #fff;
-  text-decoration: none;
+  color: rgb(70, 3, 3);
+  text-decoration: rgb(238, 255, 205);
 }
 
 .menu-icon {
