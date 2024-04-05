@@ -92,14 +92,14 @@ aside {
   padding-left: 20px;
 }
 .card {
-  background-color: white;
+  background-color: rgb(255, 213, 213);
   padding: 20px;
   margin-top: 20px;
   text-align: justify;
 }
 
 .cardContato {
-  background-color: white;
+  background-color: rgb(255, 213, 213);
   padding: 20px;
   margin-top: 20px;
   text-align: left;
@@ -213,23 +213,21 @@ td {
 
 th {
   background-color: black;
-  color: white;
+  color: rgb(176, 53, 53);
+  align-items: center;
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*odd aplicado aos elemntos inpare*/
 table tr:nth-child(odd) {
   background-color: #ddd;
 }
 
-/*odd aplicado aos elemntos par*/
 table tr:nth-child(even) {
   background-color: white;
 }
 
-/* Formatando Responsividade Tablet*/
 @media screen and (max-width: 768px) {
   section,
   aside,
@@ -239,7 +237,7 @@ table tr:nth-child(even) {
     font-size: 14px;
   }
 }
-/*Celular*/
+
 @media screen and (max-width: 600px) {
   nav li,
   header h1,
@@ -391,8 +389,52 @@ table tr:nth-child(even) {
     align-self: flex-end; /* Alinha o ícone do menu à direita */
   }
 }
-img,
-iframe {
+img {
   max-width: 100%;
   height: auto;
+}
+
+.titulo {
+  font-weight: bold;
+  color: blue;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Uma coluna para o texto e outra para a imagem */
+  gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.footer-text {
+  grid-column: 1; /* O texto ocupa a primeira coluna */
+}
+
+.footer-image {
+  grid-column: 3; /* A imagem ocupa a segunda coluna */
+  justify-self: end; /* Alinha a imagem no final da coluna */
+}
+
+.footer-image img {
+  width: 150px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção original da imagem */
+}
+.flex-container {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
 }
