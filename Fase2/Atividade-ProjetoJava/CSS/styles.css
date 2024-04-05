@@ -231,7 +231,8 @@ table tr:nth-child(even) {
 @media screen and (max-width: 768px) {
   section,
   aside,
-  body {
+  body,
+  iframe {
     width: 100%;
     padding: 0;
     font-size: 14px;
