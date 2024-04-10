@@ -1,0 +1,120 @@
+var jq_form = jQuery("#marketo_form");
+MktoForms2.loadForm("//app-sji.marketo.com", "487-WAY-049", jq_form.attr('data-form-id'),
+	function (form) {
+		var emailFields = ["Email", "Email_Address_2__c"],
+			emailBannedPatterns = [
+				/@gmail\./,
+				/@gamil\./,
+				/@yahoo\./,
+				/@hotmail\./,
+				/@live\./,
+				/@aol\./,
+				/@test\./,
+				/@mailinator\./,
+				/@outlook\./
+			],
+			emailBannedMessage = "Please insert a valid work email address.",
+			showMessageNearSubmit = false;
+		var triggers = jQuery("#marketo_form input, #marketo_form select");
+		function checkIfEmpty(){
+			jQuery('#marketo_form .mktoFormRow').each(function(){
+				var col = jQuery(this);
+				var elCount = jQuery('input, select',col).length;
+				if(!elCount){
+					col.addClass("empty");
+				}else{
+					col.removeClass("empty");
+				}
+			});
+			jQuery('#marketo_form fieldset').each(function(){
+				var col = jQuery(this);
+				var elCount = jQuery('input, select',col).length;
+				if(elCount==1){
+					col.addClass("full");
+					col.removeClass("half");
+					col.removeClass("empty");
+				}else if(elCount==2){
+					col.addClass("half");
+					col.removeClass("full");
+					col.removeClass("empty");
+				}else{
+					col.addClass("empty");
+					col.removeClass("full");
+					col.removeClass("half");
+				}
+
+			});
+
+		}
+		checkIfEmpty();
+		jQuery('#marketo_form .mktoFormRow').on('change', "input, select",function(){
+			setTimeout(function(){
+				checkIfEmpty();
+			},500);
+		});
+		jQuery('#marketo_form button').append('<svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.94205 0.724562C6.69797 0.480484 6.30224 0.480484 6.05817 0.724562C5.81409 0.96864 5.81409 1.36437 6.05817 1.60845L10.8246 6.37486H0.666748C0.32157 6.37486 0.041748 6.65468 0.041748 6.99986C0.041748 7.34504 0.32157 7.62486 0.666748 7.62486H10.8245L6.05817 12.3912C5.81409 12.6353 5.81409 13.031 6.05817 13.2751C6.30224 13.5192 6.69797 13.5192 6.94205 13.2751L12.7749 7.4423L12.7754 7.44178C12.8395 7.37771 12.8867 7.30319 12.9171 7.2237C12.9377 7.17005 12.9511 7.11284 12.9562 7.05324C12.9594 7.01528 12.9592 6.97708 12.9555 6.93915C12.9509 6.8909 12.9407 6.84424 12.9257 6.79983C12.8959 6.71141 12.8458 6.62834 12.7754 6.5579L6.94205 0.724562Z" fill="#ffffff"/></svg>')
+
+
+		form.onValidate(function (nativeValid) {
+			console.log('triggered');
+			if (!nativeValid) return;
+			var formEl = form.getFormElem()[0],
+				currentValues = form.getValues(),
+				buttonEl = formEl.querySelector(".mktoButtonWrap"),
+				highlightEl,
+				allEmailsAllowed;
+
+			allEmailsAllowed = !emailFields.some(function (fieldName) {
+				if (isEmailBanned(currentValues[fieldName])) {
+					return highlightEl = formEl.querySelector("[name='" + fieldName + "']");
+				}
+			});
+
+			buttonEl.removeAttribute("data-error-message");
+			if (!allEmailsAllowed) {
+				form.showErrorMessage(emailBannedMessage, MktoForms2.$(highlightEl));
+				if (showMessageNearSubmit) {
+					buttonEl.setAttribute("data-error-message", emailBannedMessage);
+					if (typeof window.dataLayer !== 'undefined') {
+						const args = {
+							event: "global_form_submission",
+							event_action:jq_form.attr('data-form-action'),
+							event_group:'form submission',
+							event_status:'failure',
+							event_page_url: window.location.href,
+							event_description: jq_form.attr('data-form-description'),
+						}
+						window.dataLayer.push(args);
+					}
+				}
+			}
+
+			form.submittable(allEmailsAllowed);
+		});
+		var hasTy = document.getElementsByClassName('success_page_rewrite');
+		form.onSuccess(function(values, followUpUrl) {
+			if (typeof window.dataLayer !== 'undefined') {
+				const args = {
+					event: "global_form_submission",
+					event_action:jq_form.attr('data-form-action'),
+					event_group:'form submission',
+					event_status:'success',
+					event_page_url: window.location.href,
+					event_description: jq_form.attr('data-form-description'),
+				}
+				window.dataLayer.push(args);
+			}
+			if (hasTy.length > 0) {
+				var url = new URL(window.location.href);
+				url.searchParams.set('ty', 1);
+				location.href = url.href;
+				return false;
+			}
+		});
+		function isEmailBanned(emailAddress) {
+			return emailBannedPatterns.some(function (pattern) {
+				return new RegExp(pattern.source + "[a-z0-9-.]+$", "i").test(emailAddress);
+			});
+		}
+	});
+var pollForDefinition=function(scope,varname,callback){if(typeof scope[varname]!=="undefined"){return callback();} var interval=setInterval(function(){if(typeof scope[varname]!=="undefined"){clearInterval(interval);callback();}},250);};var script=document.createElement("script");script.src="https://marketo.clearbit.com/assets/v1/marketo/forms.js";script.async=true;script.setAttribute("data-clearbit-publishable-key","pk_61cc1bb5ffa6801a4c5f4a72aceaae13");script.onerror=function(e){console.log("Clearbit Form JS unable to load");pollForDefinition(window,"MktoForms2",function(){MktoForms2.whenReady(function(form){form.setValues({clearbitFormStatus:"Clearbit Form JS unable to load"});});});};document.body.append(script);
